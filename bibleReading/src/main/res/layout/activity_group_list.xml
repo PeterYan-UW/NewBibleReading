@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.afc.biblereading.group.GroupListActivity" >
+    <RelativeLayout
+        android:id="@+id/group_title_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="您尚未加入任何读经小组"
+            android:id="@+id/group_page_content_textView"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="您的读经小组"
+            android:id="@+id/user_group_content_textView"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="请选择读经小组"
+            android:id="@+id/join_group_page_content_textView"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+	<ListView
+        android:id="@+id/groups_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_title_relative_layout"/>
+
+</RelativeLayout>

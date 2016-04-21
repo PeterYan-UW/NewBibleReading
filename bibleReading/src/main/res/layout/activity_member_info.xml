@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+    	android:id="@+id/user_info_linearview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    	android:layout_above="@+id/bottom_relative_layout"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small">
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email" />
+
+        <TextView
+            android:id="@+id/email_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding_large"
+            android:singleLine="true"
+            android:text="@string/three_dots" />
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/full_name" />
+
+        <TextView
+            android:id="@+id/full_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/padding_large"
+            android:singleLine="true"
+            android:text="@string/three_dots" />
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reading_history" />
+		<ListView
+	         android:id="@+id/member_log_listview"
+	         android:layout_width="match_parent"
+	         android:layout_height="fill_parent"
+	         android:layout_alignParentTop="true" />
+
+    </LinearLayout>
+</RelativeLayout>

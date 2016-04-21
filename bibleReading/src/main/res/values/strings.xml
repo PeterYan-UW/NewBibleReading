@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">读经小伙伴</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_calender">Calender</string>
+    <string name="title_activity_dailymission">Daily Mission</string>
+    <string name="please_login">Login to get more feature</string>
+    <string name="title_activity_group_list">GroupListActivity</string>
+    <string name="title_activity_show_group">ShowGroupActivity</string>
+    <string name="title_activity_user_group">UserGroupActivity</string>
+    <string name="user">User</string>
+    <string name="title_activity_tabs">Tabs</string>
+    <string name="title_acitvity_first">First</string>
+    <string name="title_acitvity_second">Second</string>
+    <string name="task_text">任务</string>
+    <string name="info_text">信息</string>
+    <string name="group_text">小组</string>
+    <string name="user_text">用户</string>
+    <string name="search_by_email">用户邮箱</string>
+    <string name="title_activity_member_info">MemberInfoActivity</string>
+    <string name="title_activity_choose_book">ChooseBookActivity</string>
+    <string name="title_activity_user_group_list">UserGroupListActivity</string>
+    <string name="invite_friend">Invite Friend</string>
+    <string name="title_activity_search_user">SearchUserActivity</string>
+    <string name="no_match_eamil">此用户不存在</string>
+    <string name="send_invitation">邀请</string>
+
+</resources>

@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/padding_middle"
+    android:paddingRight="@dimen/padding_middle"
+    android:background="@drawable/sign_in_bg">
+
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="70dp"
+
+        android:capitalize="none"
+        android:hint="@string/password"
+        android:imeOptions="actionSend"
+        android:paddingBottom="@dimen/padding_middle"
+        android:password="true"
+        android:singleLine="true"
+        android:background="#00000000" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="365dp"
+        android:onClick="onClick"
+        android:text="登        陆"
+        android:textSize="20dp" 
+        android:background="@drawable/sign_in_button"/>
+
+    <CheckBox
+        android:id="@+id/stay_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="310dp"
+        android:layout_centerHorizontal="false"
+        android:text="保持登陆" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/logo_circle" />
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="240dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginLeft="70dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+
+
+
+    <TextView
+        android:id="@+id/email_bg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#BEBEBE"
+        android:alpha="0.4" 
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true" />
+    
+    <TextView
+        android:id="@+id/password_bg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="#BEBEBE"
+        android:alpha="0.5" 
+        android:layout_marginTop="260dp"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/user_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+		android:layout_marginTop="204dp"
+        android:layout_marginLeft="28dp"
+        android:src="@drawable/user_icon"
+        android:alpha="0.6" />
+
+    <ImageView
+        android:id="@+id/password_icon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+		android:layout_marginTop="272dp"
+        android:layout_marginLeft="28dp"
+        android:src="@drawable/password_icon"
+        android:alpha="0.7" />
+
+    <TextView
+        android:id="@+id/Sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/password_edittext"
+
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="10dp"
+        android:text="新用户"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:textColor="#FF4500"
+        android:clickable="true"
+        android:onClick="onClick"/>
+
+</RelativeLayout>
