@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_register">register</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string name="qb_slogan">YOUR COMMUNICATION \nBACKEND</string>
+    <string name="name">Name</string>
+    <string name="tags">Tags</string>
+    <string name="name_with_colon">Name:</string>
+    <string name="tags_with_colon">Tags:</string>
+    <string name="group_size_with_colon">Number of Members:</string>
+    <string name="create_group">New Group</string>
+    <string name="join_group">Join group</string>
+    <string name="leave_group">Leave Group</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="show_user">Show User</string>
+    <string name="update_user">Update User</string>
+    <string name="users">Users</string>
+    <string name="logout">Log Out</string>
+    <string name="login">Login</string>
+    <string name="full_name">Full Name</string>
+    <string name="group_name">Group Name</string>
+    <string name="fisrt_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="web_site">Web Site</string>
+    <string name="create">Create</string>
+    <string name="update">Update</string>
+    <string name="choose">Choose</string>
+    <string name="delete">Delete</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="user_log_out_msg">User successfully logout!</string>
+    <string name="please_sign_in">Please signIn by this user!</string>
+    <string name="user_successfully_updated">User was successfully updated!</string>
+    <string name="user_successfully_sign_in">User was successfully sign in!</string>
+    <string name="user_successfully_deleted">User was successfully deleted!</string>
+    <string name="colon">:</string>
+    <string name="self_edit">Self edit</string>
+    <string name="save">save</string>
+    <string name="dlg_ok">OK</string>
+    <string name="dlg_cancel">Cancel</string>
+    <string name="three_dots">…</string>
+    <string name="reading_history">Reading History</string>
+    <string name="group_members">Group Members:</string>   
+    
+</resources>

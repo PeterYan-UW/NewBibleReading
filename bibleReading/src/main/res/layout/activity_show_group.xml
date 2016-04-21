@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/user_info_scrollview"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_small">
+
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/group_name" />
+
+            <TextView
+                android:id="@+id/full_name_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding_large"
+                android:singleLine="true"
+                android:text="@string/three_dots" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/group_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:layout_below="@+id/group_name_layout"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/num_member_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/group_size_with_colon"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/group_number_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+         	android:text="@string/group_members" />
+        <ListView
+	        android:id="@+id/member_listview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/join_this_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_info_scrollview"
+        android:text="Join this group"
+        android:onClick="onClick"/>
+
+</RelativeLayout>

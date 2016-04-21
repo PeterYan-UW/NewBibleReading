@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.afc.biblereading.ScheduleActivity" >
+    <RelativeLayout
+        android:id="@+id/pick_book_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+       	android:layout_centerHorizontal="true">
+    	<TextView
+            android:id="@+id/PickBookTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       		android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="42dp"
+            android:text="选择阅读范围"
+            android:textSize="40dp" />
+		<TextView
+            android:id="@+id/StartBookText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/PickBookTitle"
+            android:text="从"
+            android:textSize="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/start_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/StartBookText"
+            android:layout_alignRight="@+id/PickBookTitle"
+            android:layout_alignTop="@+id/StartBookText"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/StartBookText" />
+        
+        <TextView
+            android:id="@+id/EndBookText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StartBookText"
+            android:layout_marginLeft="15dp"
+            android:text="到"
+            android:layout_marginTop="50dp"
+            android:textSize="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Spinner
+            android:id="@+id/end_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/EndBookText"
+            android:layout_alignRight="@+id/PickBookTitle"
+            android:layout_alignTop="@+id/EndBookText"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/EndBookText" />
+        
+        <Button
+	        android:id="@+id/next_step"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_below="@+id/end_spinner"
+            android:layout_marginTop="50dp"
+	        android:text="下一步"
+	        android:onClick="nextStep" />
+	</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/pick_date_layout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+       	android:visibility="gone">
+    	<TextView
+            android:id="@+id/PickDateTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="42dp"
+            android:text="选择阅读周期"
+            android:textSize="40dp"
+        	android:layout_centerHorizontal="true" />
+		<TextView
+            android:id="@+id/StartDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/PickDateTitle"
+            android:text="开始日期"
+            android:textSize="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <DatePicker
+        	android:id="@+id/StartDateValue"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:layout_below="@+id/StartDateText"
+        	android:layout_centerHorizontal="true" />
+        
+        <TextView
+            android:id="@+id/EndDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StartDateValue"
+            android:layout_marginTop="10dp"
+            android:text="结束日期"
+            android:textSize="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <DatePicker
+        	android:id="@+id/EndDateValue"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:layout_below="@+id/EndDateText"
+        	android:layout_centerHorizontal="true"/>
+        <Button
+	        android:id="@+id/back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/EndDateValue"
+	        android:layout_marginTop="20dp"
+	        android:layout_alignParentLeft="true"
+	        android:text="上一步"
+	        android:onClick="stepBack" />
+        <Button
+	        android:id="@+id/start"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/EndDateValue"
+	        android:layout_marginTop="20dp"
+	        android:layout_alignParentRight="true"
+	        android:text="开始"
+	        android:onClick="startReading" />
+	</RelativeLayout>
+</RelativeLayout>

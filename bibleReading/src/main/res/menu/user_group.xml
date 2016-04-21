@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.afc.biblereading.UserGroupActivity" >
+
+	<item android:id="@+id/leave_group"
+		android:title="Leave Group"/>
+
+</menu>

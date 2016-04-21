@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_middle"
+    android:paddingRight="@dimen/padding_middle"
+    android:background="@drawable/sign_in_bg">
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password_edittext"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/email"
+        android:paddingBottom="@dimen/padding_middle"
+        android:singleLine="true" 
+        android:inputType="textEmailAddress"/>
+    
+    <EditText
+        android:id="@+id/password_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="@string/password"
+        android:imeOptions="actionSend"
+        android:singleLine="true"
+        android:inputType="textPassword" />
+    
+    <EditText
+        android:id="@+id/first_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/warring"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/fisrt_name"
+        android:paddingBottom="@dimen/padding_middle"
+        android:singleLine="true" />
+    
+    <EditText
+        android:id="@+id/last_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_name_edittext"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/last_name"
+        android:paddingBottom="@dimen/padding_middle"
+        android:singleLine="true" />
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/last_name_edittext"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="@string/sign_up" />
+
+    <TextView
+        android:id="@+id/warring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_edittext"
+        android:layout_alignLeft="@+id/password_edittext"
+        android:text="*任意简单易记的八位密码即可"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
