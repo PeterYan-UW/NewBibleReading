@@ -13,7 +13,10 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.afc.biblereading.ApplicationSingleton;
+import com.afc.biblereading.LocalDataManage;
 import com.afc.biblereading.R;
+import com.afc.biblereading.ScheduleActivity;
 import com.afc.biblereading.adapter.UserLogListAdapter;
 import com.afc.biblereading.group.ShowUserGroupActivity;
 import com.afc.biblereading.helper.DataHolder;
@@ -38,7 +41,6 @@ public class UserActivity extends BaseActivity implements AdapterView.OnItemClic
     private ListView userLogListView;
     private Button logOutButton;
     private Button selfEditButton;
-    private Button groupButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -103,14 +105,14 @@ public class UserActivity extends BaseActivity implements AdapterView.OnItemClic
     public void onClick(View view) {
         Intent intent;
         switch (view.getId()) {
-            case R.id.sign_in_button:
-                intent = new Intent(this, SignInActivity.class);
-                startActivityForResult(intent, 0);
-                break;
-            case R.id.sign_up_button:
-                intent = new Intent(this, SignUpUserActivity.class);
-                startActivity(intent);
-                break;
+//            case R.id.sign_in_button:
+//                intent = new Intent(this, SignInActivity.class);
+//                startActivityForResult(intent, 0);
+//                break;
+//            case R.id.sign_up_button:
+//                intent = new Intent(this, SignUpUserActivity.class);
+//                startActivity(intent);
+//                break;
             case R.id.logout_button:
                 progressDialog.show();
                 // Logout
@@ -137,6 +139,17 @@ public class UserActivity extends BaseActivity implements AdapterView.OnItemClic
             case R.id.self_edit_button:
                 intent = new Intent(this, UpdateUserActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.reset_plan_button:
+                Intent backMain = new Intent(this, ScheduleActivity.class);
+                LocalDataManage DOP = ((ApplicationSingleton)getApplication()).getDataBase();
+                DOP.DeletePlan(DOP);
+                if (ScheduleActivity.alarmManager != null){
+                    if (ScheduleActivity.pendingIntent != null){
+                        ScheduleActivity.alarmManager.cancel(ScheduleActivity.pendingIntent);
+                    }
+                }
+                startActivity(backMain);
                 break;
         }
     }

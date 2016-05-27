@@ -257,38 +257,31 @@ public class CalenderActivity extends FragmentActivity{
 //		//alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 1000*60, pendingIntent);
 //	 	alarmManager.setInexactRepeating(AlarmManager.RTC, calendar.getTimeInMillis(), 60*1000, pendingIntent);
 	}
-	
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.calender, menu);
-        return true;
-    }
     
 
-	public void ResetDays(){
-		Intent backMain = new Intent(this, ScheduleActivity.class);
-		LocalDataManage DOP = ((ApplicationSingleton)getApplication()).getDataBase();
-		DOP.DeletePlan(DOP);
-		if (ScheduleActivity.alarmManager != null){
-			if (ScheduleActivity.pendingIntent != null){
-				ScheduleActivity.alarmManager.cancel(ScheduleActivity.pendingIntent);
-			}
-		}
-		
-    	startActivity(backMain);    	
-    }
-	
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-    	switch (item.getItemId()) {
-        case R.id.reset:
-        	ResetDays();
-            return true;
-        default:
-            return super.onOptionsItemSelected(item);
-        }
-    }
+//	public void ResetDays(){
+//		Intent backMain = new Intent(this, ScheduleActivity.class);
+//		LocalDataManage DOP = ((ApplicationSingleton)getApplication()).getDataBase();
+//		DOP.DeletePlan(DOP);
+//		if (ScheduleActivity.alarmManager != null){
+//			if (ScheduleActivity.pendingIntent != null){
+//				ScheduleActivity.alarmManager.cancel(ScheduleActivity.pendingIntent);
+//			}
+//		}
+//
+//    	startActivity(backMain);
+//    }
+
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//    	switch (item.getItemId()) {
+//        case R.id.reset:
+//        	ResetDays();
+//            return true;
+//        default:
+//            return super.onOptionsItemSelected(item);
+//        }
+//    }
     	
 	private Boolean exit = false;
 	@Override

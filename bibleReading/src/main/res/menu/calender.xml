@@ -1,8 +1,0 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.biblereading.Calender" >
-
-	<item android:id="@+id/reset"
-          android:title="Reset Plan"/>  	  
-
-</menu>

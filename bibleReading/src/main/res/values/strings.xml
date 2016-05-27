@@ -26,5 +26,6 @@
     <string name="title_activity_search_user">SearchUserActivity</string>
     <string name="no_match_eamil">此用户不存在</string>
     <string name="send_invitation">邀请</string>
+    <string name="reset_plan">Reset Plan</string>
 
 </resources>

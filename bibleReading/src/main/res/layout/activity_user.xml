@@ -60,12 +60,18 @@
         android:gravity="center_horizontal">
 
         <Button
-            android:id="@+id/self_edit_button"
+            android:id="@+id/reset_plan_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="onClick"
+            android:text="@string/reset_plan" />
+        <Button
+            android:id="@+id/self_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/reset_plan_button"
+            android:onClick="onClick"
             android:text="@string/self_edit" />
-
         <Button
             android:id="@+id/logout_button"
             android:layout_width="wrap_content"
